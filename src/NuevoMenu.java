@@ -8,7 +8,7 @@ public class NuevoMenu {
             System.out.println("1. Calculos de un Circulo");
             System.out.println("2. Calculos de un Cuadrado");
             System.out.println("3. salir");
-            System.out.print("Incerta el valor : ");
+            System.out.print("Inserte opcion : ");
             int choice = scanner.nextInt();
             switch (choice) {
                 case 1:
@@ -29,7 +29,7 @@ public class NuevoMenu {
                     System.out.print("Inserta el tamaño del lado del cuadrado: ");
                     double lado11 = scanner.nextDouble();
                     Cuadrado1 square = new Cuadrado1((double) lado11);
-                    System.out.println("¿Qué operación deseas realizar? (elija: diagonal, perímetro, area)");
+                    System.out.println("¿Qué operación deseas realizar? (elija: diagonal, perimetro, area)");
                     operacion = scanner.next();
                     if (operacion.equals("diagonal")) {
                         System.out.println("La diagonal del cuadrado es: " + square.getDiagonal());
@@ -42,11 +42,11 @@ public class NuevoMenu {
                     }
                     break;
                 case 3:
-                    System.out.println("Exiting...");
+                    System.out.println("Saliendo...");
                     System.exit(0);
                     break;
                 default:
-                    System.out.println("Invalid choice. Please enter a valid choice.");
+                    System.out.println("Accion invalidad, Porfavor Coloque una accion valida.");
                     break;
             }
         }
